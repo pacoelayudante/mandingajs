@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="720920797079305">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="456644409184851" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Include script" sid="205659075510528" type="MandingaJS">
+                    <param id="0" name="File">&quot;includetest.js&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="886923077764886">
+            <conditions>
+                <condition id="0" name="On click" sid="936896011555826" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Run script" sid="576880642401817" type="MandingaJS">
+                    <param id="0" name="File">&quot;runtest.js&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="484526596012406">
+            <conditions>
+                <condition id="0" name="On script loaded" sid="360949941794585" type="MandingaJS">
+                    <param id="0" name="File">&quot;includetest.js&quot;</param>
+                    <param id="1" name="Wich">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Call function" sid="886548073410940" type="MandingaJS">
+                    <param id="0" name="Function">&quot;setHashNums&quot;</param>
+                    <param id="1" name="Parameter {n}">floor(random(10)){###}3{###}&quot;esString ja&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="519333989295184">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="951105188889975" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">flechita</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Call function with objects" sid="384209160963484" type="MandingaJS">
+                    <param id="0" name="Function">&quot;logThese&quot;</param>
+                    <param id="1" name="Object Parameter">flechita</param>
+                    <param id="2" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="160627212107028">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="668390461479649" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">flechita</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="622590738839215">
+                    <conditions>
+                        <condition id="-19" name="Pick all" sid="428524961291535" type="System">
+                            <param id="0" name="Object">flechita</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Call function with objects" sid="725499700980748" type="MandingaJS">
+                            <param id="0" name="Function">&quot;rotateAngle&quot;</param>
+                            <param id="1" name="Object Parameter">flechita</param>
+                            <param id="2" name="Parameter {n}">random(10)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
