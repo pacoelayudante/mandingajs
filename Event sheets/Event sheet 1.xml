@@ -82,5 +82,16 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="238511083400113">
+            <conditions>
+                <condition id="0" name="On click" sid="641465359528181" type="Mouse">
+                    <param id="0" name="Mouse button">1</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="700497629715238" type="System" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
